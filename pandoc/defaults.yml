@@ -1,0 +1,7 @@
+from: markdown
+to: html
+standalone: true
+template: pandoc/template.html
+include-before-body: pandoc/header.html
+include-after-body: pandoc/footer.html
+
