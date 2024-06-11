@@ -1,11 +1,8 @@
 AUTHOR = 'nielskoe'
 SITENAME = 'nielskoe'
-SITEURL = ""
-
+SITEURL = "nielskoe.com"
 PATH = "content"
-
 TIMEZONE = 'Europe/Rome'
-
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
@@ -14,6 +11,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+THEME = "simple"
 
 # Blogroll
 LINKS = (
