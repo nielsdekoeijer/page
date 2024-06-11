@@ -1,5 +1,6 @@
 AUTHOR = 'nielskoe'
 SITENAME = 'nielskoe'
+SITEURL = 'page'
 PATH = "content"
 TIMEZONE = 'Europe/Rome'
 DEFAULT_LANG = 'en'
@@ -13,17 +14,11 @@ AUTHOR_FEED_RSS = None
 THEME = "simple"
 
 # Blogroll
-LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
-)
+LINKS = ()
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("https://www.linkedin.com/in/niels-de-koeijer/", "#"),
 )
 
 DEFAULT_PAGINATION = 10
