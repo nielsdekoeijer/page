@@ -1,10 +1,9 @@
 ---
-title: "About"
-author: "Author Name"
+title: "Projects"
+author: "Niels"
 date: "2024-06-11"
 ---
 
-# About Page
-
-This is the about page of the static site.
+# Projects
+Here is a list of (interesting?) projects:
 

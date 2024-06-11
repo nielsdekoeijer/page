@@ -1,10 +1,9 @@
 ---
-title: "About"
-author: "Author Name"
+title: "Contact"
+author: "Niels"
 date: "2024-06-11"
 ---
 
-# About Page
-
-This is the about page of the static site.
+# Contact
+If you would like to reach out, consider adding me on [linkedin](https://www.linkedin.com/in/niels-de-koeijer/).
 
