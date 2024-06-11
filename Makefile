@@ -10,9 +10,6 @@ all: $(MD_GEN)
 # Find all files in the pandoc directory
 PANDOC_FILES := $(shell find pandoc -type f)
 
-# Ensure the site directory exists before generating HTML files
-$(shell mkdir -p site/contents/)
-
 # Clean target: remove all generated HTML files
 clean:
 	rm -f $(MD_GEN)
