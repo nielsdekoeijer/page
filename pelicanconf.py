@@ -1,6 +1,5 @@
 AUTHOR = 'nielskoe'
 SITENAME = 'nielskoe'
-SITEURL = "nielskoe.com"
 PATH = "content"
 TIMEZONE = 'Europe/Rome'
 DEFAULT_LANG = 'en'
