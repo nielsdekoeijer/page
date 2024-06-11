@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Replace with your default branch if different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Pandoc
+        run: sudo apt-get install -y pandoc
+
+      - name: Install ghp-import
+        run: pip install ghp-import
+
+      - name: Generate HTML files
+        run: make
+
+      - name: Deploy to GitHub Pages
+        run: |
+          mkdir -p output
+          mv *.html output/
+          ghp-import -n -p -f output
+
