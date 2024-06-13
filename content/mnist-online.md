@@ -12,28 +12,8 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
 
 ***Note that on slower network connections it may not load immediately!***
 
-<style>
-  #canvas-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  #canvas {
-    width: 100%;
-    height: 100%;
-    max-width: 100vw;
-    max-height: 100vh;
-    object-fit: contain; /* This ensures the content scales proportionally */
-  }
-</style>
-
-<div id="canvas-container">
-  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
-</div>
-
+<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
 <script type='text/javascript'>
   var Module = {
     print: (function() {
@@ -81,7 +61,36 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
       if (text) console.error('[post-exception status] ' + text);
     };
   };
+
+  function adjustCanvasScale() {
+    var canvas = document.getElementById('canvas');
+    var containerWidth = document.documentElement.clientWidth;
+    var containerHeight =document.documentElement.clientHeight;
+    
+    // Calculate the scale based on desired maximum size
+    var maxCanvasWidth = 760;
+    var maxCanvasHeight = 560;
+    
+    var scaleWidth = containerWidth / maxCanvasWidth;
+    var scaleHeight = containerHeight / maxCanvasHeight;
+    
+    // Use the smaller scale to ensure the canvas fits within the viewport
+    var scale = Math.min(scaleWidth, scaleHeight);
+    
+    canvas.style.transform = `scale(${scale * 0.9})`;
+    canvas.style.transformOrigin = 'top left';
+  }
+  
+  // Adjust the canvas scale on load and on window resize
+  window.addEventListener('load', adjustCanvasScale);
+  window.addEventListener('resize', adjustCanvasScale);
 </script>
 <script async type="text/javascript" src="mnist-web.js"></script>
+
+<style>
+  #canvas {
+    margin-left: 20;
+  }
+</style>
 
 This demo is entirely created in C++!
