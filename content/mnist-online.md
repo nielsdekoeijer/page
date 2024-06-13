@@ -65,8 +65,8 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
     }
   }
 
-  window.addEventListener('load', resizeCanvas);
-  window.addEventListener('resize', resizeCanvas);
+  // window.addEventListener('load', resizeCanvas);
+  // window.addEventListener('resize', resizeCanvas);
 
 </script>
 <script async type="text/javascript" src="mnist-web.js"></script>
