@@ -31,5 +31,7 @@ jobs:
         run: |
           mkdir -p output
           mv content/*.html output/
+          mv content/*.js output/
+          mv content/*.wasm output/
           echo "nielskoe.com" > output/CNAME
           ghp-import -n -p -f output
