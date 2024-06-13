@@ -10,6 +10,8 @@ On the canvas below, you can draw a number.
 A neural net will then run in your browser to determine which number it is (0 through 9).
 The red bars will indicate the likelyhood of each number as you draw on the canvas.
 
+***Note that on slower network connections it may not load immediately!***
+
 <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
 <script type='text/javascript'>
   var Module = {
