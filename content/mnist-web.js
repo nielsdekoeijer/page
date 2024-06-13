@@ -909,42 +909,42 @@ function dbg(...args) {
 // === Body ===
 
 var ASM_CONSTS = {
-  793653: () => { if (document.fullscreenElement) return 1; },  
- 793699: () => { return document.getElementById('canvas').width; },  
- 793751: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 793819: () => { document.exitFullscreen(); },  
- 793846: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
- 793919: () => { if (document.fullscreenElement) return 1; },  
- 793965: () => { return document.getElementById('canvas').width; },  
- 794017: () => { return screen.width; },  
- 794042: () => { document.exitFullscreen(); },  
- 794069: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
- 794202: () => { if (document.fullscreenElement) return 1; },  
- 794248: () => { return document.getElementById('canvas').width; },  
- 794300: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 794368: () => { if (document.fullscreenElement) return 1; },  
- 794414: () => { return document.getElementById('canvas').width; },  
- 794466: () => { return screen.width; },  
- 794491: () => { if (document.fullscreenElement) return 1; },  
- 794537: () => { return document.getElementById('canvas').width; },  
- 794589: () => { return screen.width; },  
- 794614: () => { document.exitFullscreen(); },  
- 794641: () => { if (document.fullscreenElement) return 1; },  
- 794687: () => { return document.getElementById('canvas').width; },  
- 794739: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 794807: () => { document.exitFullscreen(); },  
- 794834: () => { return screen.width; },  
- 794859: () => { return screen.height; },  
- 794885: () => { return window.screenX; },  
- 794912: () => { return window.screenY; },  
- 794939: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
- 794992: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); },  
- 795063: () => { document.getElementById('canvas').style.cursor = 'none'; },  
- 795120: ($0) => { document.getElementById('canvas').style.cursor = UTF8ToString($0); },  
- 795191: () => { if (document.fullscreenElement) return 1; },  
- 795237: () => { if (document.pointerLockElement) return 1; },  
- 795284: ($0, $1, $2, $3) => { if (typeof Module == 'undefined' || !Module.MountedFiles) { return 1; } let fileName = UTF8ToString($0 >>> 0); if (fileName.startsWith('./')) { fileName = fileName.substring(2); } const fileData = Module.MountedFiles.get(fileName); if (!fileData) { return 2; } const offset = $1 >>> 0; const length = $2 >>> 0; const buffer = $3 >>> 0; if (offset + length > fileData.byteLength) { return 3; } try { HEAPU8.set(fileData.subarray(offset, offset + length), buffer); return 0; } catch { return 4; } },  
- 795785: () => { return (typeof wasmOffsetConverter !== 'undefined'); }
+  794565: () => { if (document.fullscreenElement) return 1; },  
+ 794611: () => { return document.getElementById('canvas').width; },  
+ 794663: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 794731: () => { document.exitFullscreen(); },  
+ 794758: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
+ 794831: () => { if (document.fullscreenElement) return 1; },  
+ 794877: () => { return document.getElementById('canvas').width; },  
+ 794929: () => { return screen.width; },  
+ 794954: () => { document.exitFullscreen(); },  
+ 794981: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
+ 795114: () => { if (document.fullscreenElement) return 1; },  
+ 795160: () => { return document.getElementById('canvas').width; },  
+ 795212: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 795280: () => { if (document.fullscreenElement) return 1; },  
+ 795326: () => { return document.getElementById('canvas').width; },  
+ 795378: () => { return screen.width; },  
+ 795403: () => { if (document.fullscreenElement) return 1; },  
+ 795449: () => { return document.getElementById('canvas').width; },  
+ 795501: () => { return screen.width; },  
+ 795526: () => { document.exitFullscreen(); },  
+ 795553: () => { if (document.fullscreenElement) return 1; },  
+ 795599: () => { return document.getElementById('canvas').width; },  
+ 795651: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 795719: () => { document.exitFullscreen(); },  
+ 795746: () => { return screen.width; },  
+ 795771: () => { return screen.height; },  
+ 795797: () => { return window.screenX; },  
+ 795824: () => { return window.screenY; },  
+ 795851: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
+ 795904: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); },  
+ 795975: () => { document.getElementById('canvas').style.cursor = 'none'; },  
+ 796032: ($0) => { document.getElementById('canvas').style.cursor = UTF8ToString($0); },  
+ 796103: () => { if (document.fullscreenElement) return 1; },  
+ 796149: () => { if (document.pointerLockElement) return 1; },  
+ 796196: ($0, $1, $2, $3) => { if (typeof Module == 'undefined' || !Module.MountedFiles) { return 1; } let fileName = UTF8ToString($0 >>> 0); if (fileName.startsWith('./')) { fileName = fileName.substring(2); } const fileData = Module.MountedFiles.get(fileName); if (!fileData) { return 2; } const offset = $1 >>> 0; const length = $2 >>> 0; const buffer = $3 >>> 0; if (offset + length > fileData.byteLength) { return 3; } try { HEAPU8.set(fileData.subarray(offset, offset + length), buffer); return 0; } catch { return 4; } },  
+ 796697: () => { return (typeof wasmOffsetConverter !== 'undefined'); }
 };
 function GetWindowInnerWidth() { return window.innerWidth; }
 function GetWindowInnerHeight() { return window.innerHeight; }
@@ -9651,6 +9651,8 @@ function GetWindowInnerHeight() { return window.innerHeight; }
 
   var _glfwSetScrollCallback = (winid, cbfun) => GLFW.setScrollCallback(winid, cbfun);
 
+  var _glfwSetWindowAttrib = (winid, attrib, value) => GLFW.setWindowAttrib(winid, attrib, value);
+
   var _glfwSetWindowContentScaleCallback = (winid, cbfun) => {
       var win = GLFW.WindowFromId(winid);
       if (!win) return null;
@@ -10913,6 +10915,8 @@ var wasmImports = {
   /** @export */
   glfwSetScrollCallback: _glfwSetScrollCallback,
   /** @export */
+  glfwSetWindowAttrib: _glfwSetWindowAttrib,
+  /** @export */
   glfwSetWindowContentScaleCallback: _glfwSetWindowContentScaleCallback,
   /** @export */
   glfwSetWindowFocusCallback: _glfwSetWindowFocusCallback,
@@ -11031,8 +11035,8 @@ var _asyncify_start_unwind = createExportWrapper('asyncify_start_unwind', 1);
 var _asyncify_stop_unwind = createExportWrapper('asyncify_stop_unwind', 0);
 var _asyncify_start_rewind = createExportWrapper('asyncify_start_rewind', 1);
 var _asyncify_stop_rewind = createExportWrapper('asyncify_stop_rewind', 0);
-var ___start_em_js = Module['___start_em_js'] = 795842;
-var ___stop_em_js = Module['___stop_em_js'] = 795915;
+var ___start_em_js = Module['___start_em_js'] = 796754;
+var ___stop_em_js = Module['___stop_em_js'] = 796827;
 
 // include: postamble.js
 // === Auto-generated postamble setup entry stuff ===
