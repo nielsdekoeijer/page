@@ -53,8 +53,10 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
 
   function resizeCanvas() {
     var canvas = document.getElementById('canvas');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = 0.9 * document.documentElement.clientWidth;
+    canvas.height = canvas.width * (560.0 / 760.0);
+    console.log(`Canvas resized to width: ${canvas.width}`);
+    console.log(`Canvas resized to height: ${canvas.height}`);
     if (Module && Module.canvas) {
       Module.canvas = canvas;
       if (Module.resize) {
