@@ -15,18 +15,6 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
 <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
 <script type='text/javascript'>
   var Module = {
-    print: (function() {
-      var element = document.getElementById('output');
-      if (element) element.value = ''; // clear browser cache
-      return (...args) => {
-        var text = args.join(' ');
-        console.log(text);
-        if (element) {
-          element.value += text + "\n";
-          element.scrollTop = element.scrollHeight; // focus on bottom
-        }
-      };
-    })(),
     canvas: (() => {
       var canvas = document.getElementById('canvas');
       canvas.addEventListener("webglcontextlost", (e) => { 
@@ -34,6 +22,8 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
 
       return canvas;
     })(),
+
+    // realistically I have no idea what this does, but removing it breaks things
     setStatus: (text) => {
       if (!Module.setStatus.last) Module.setStatus.last = { time: Date.now(), text: '' };
       if (text === Module.setStatus.last.text) return;
@@ -52,6 +42,7 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
       Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
     }
   };
+
   Module.setStatus('Downloading...');
   window.onerror = (event) => {
     Module.setStatus('Exception thrown, see JavaScript console');
@@ -59,6 +50,22 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
       if (text) console.error('[post-exception status] ' + text);
     };
   };
+
+  function resizeCanvas() {
+    var canvas = document.getElementById('canvas');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    if (Module && Module.canvas) {
+      Module.canvas = canvas;
+      if (Module.resize) {
+        Module.resize(canvas.width, canvas.height);
+      }
+    }
+  }
+
+  window.addEventListener('load', resizeCanvas);
+  window.addEventListener('resize', resizeCanvas);
+
 </script>
 <script async type="text/javascript" src="mnist-web.js"></script>
 
