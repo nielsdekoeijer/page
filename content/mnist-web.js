@@ -909,42 +909,42 @@ function dbg(...args) {
 // === Body ===
 
 var ASM_CONSTS = {
-  794597: () => { if (document.fullscreenElement) return 1; },  
- 794643: () => { return document.getElementById('canvas').width; },  
- 794695: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 794763: () => { document.exitFullscreen(); },  
- 794790: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
- 794863: () => { if (document.fullscreenElement) return 1; },  
- 794909: () => { return document.getElementById('canvas').width; },  
- 794961: () => { return screen.width; },  
- 794986: () => { document.exitFullscreen(); },  
- 795013: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
- 795146: () => { if (document.fullscreenElement) return 1; },  
- 795192: () => { return document.getElementById('canvas').width; },  
- 795244: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 795312: () => { if (document.fullscreenElement) return 1; },  
- 795358: () => { return document.getElementById('canvas').width; },  
- 795410: () => { return screen.width; },  
- 795435: () => { if (document.fullscreenElement) return 1; },  
- 795481: () => { return document.getElementById('canvas').width; },  
- 795533: () => { return screen.width; },  
- 795558: () => { document.exitFullscreen(); },  
- 795585: () => { if (document.fullscreenElement) return 1; },  
- 795631: () => { return document.getElementById('canvas').width; },  
- 795683: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 795751: () => { document.exitFullscreen(); },  
- 795778: () => { return screen.width; },  
- 795803: () => { return screen.height; },  
- 795829: () => { return window.screenX; },  
- 795856: () => { return window.screenY; },  
- 795883: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
- 795936: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); },  
- 796007: () => { document.getElementById('canvas').style.cursor = 'none'; },  
- 796064: ($0) => { document.getElementById('canvas').style.cursor = UTF8ToString($0); },  
- 796135: () => { if (document.fullscreenElement) return 1; },  
- 796181: () => { if (document.pointerLockElement) return 1; },  
- 796228: ($0, $1, $2, $3) => { if (typeof Module == 'undefined' || !Module.MountedFiles) { return 1; } let fileName = UTF8ToString($0 >>> 0); if (fileName.startsWith('./')) { fileName = fileName.substring(2); } const fileData = Module.MountedFiles.get(fileName); if (!fileData) { return 2; } const offset = $1 >>> 0; const length = $2 >>> 0; const buffer = $3 >>> 0; if (offset + length > fileData.byteLength) { return 3; } try { HEAPU8.set(fileData.subarray(offset, offset + length), buffer); return 0; } catch { return 4; } },  
- 796729: () => { return (typeof wasmOffsetConverter !== 'undefined'); }
+  794581: () => { if (document.fullscreenElement) return 1; },  
+ 794627: () => { return document.getElementById('canvas').width; },  
+ 794679: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 794747: () => { document.exitFullscreen(); },  
+ 794774: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
+ 794847: () => { if (document.fullscreenElement) return 1; },  
+ 794893: () => { return document.getElementById('canvas').width; },  
+ 794945: () => { return screen.width; },  
+ 794970: () => { document.exitFullscreen(); },  
+ 794997: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
+ 795130: () => { if (document.fullscreenElement) return 1; },  
+ 795176: () => { return document.getElementById('canvas').width; },  
+ 795228: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 795296: () => { if (document.fullscreenElement) return 1; },  
+ 795342: () => { return document.getElementById('canvas').width; },  
+ 795394: () => { return screen.width; },  
+ 795419: () => { if (document.fullscreenElement) return 1; },  
+ 795465: () => { return document.getElementById('canvas').width; },  
+ 795517: () => { return screen.width; },  
+ 795542: () => { document.exitFullscreen(); },  
+ 795569: () => { if (document.fullscreenElement) return 1; },  
+ 795615: () => { return document.getElementById('canvas').width; },  
+ 795667: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 795735: () => { document.exitFullscreen(); },  
+ 795762: () => { return screen.width; },  
+ 795787: () => { return screen.height; },  
+ 795813: () => { return window.screenX; },  
+ 795840: () => { return window.screenY; },  
+ 795867: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
+ 795920: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); },  
+ 795991: () => { document.getElementById('canvas').style.cursor = 'none'; },  
+ 796048: ($0) => { document.getElementById('canvas').style.cursor = UTF8ToString($0); },  
+ 796119: () => { if (document.fullscreenElement) return 1; },  
+ 796165: () => { if (document.pointerLockElement) return 1; },  
+ 796212: ($0, $1, $2, $3) => { if (typeof Module == 'undefined' || !Module.MountedFiles) { return 1; } let fileName = UTF8ToString($0 >>> 0); if (fileName.startsWith('./')) { fileName = fileName.substring(2); } const fileData = Module.MountedFiles.get(fileName); if (!fileData) { return 2; } const offset = $1 >>> 0; const length = $2 >>> 0; const buffer = $3 >>> 0; if (offset + length > fileData.byteLength) { return 3; } try { HEAPU8.set(fileData.subarray(offset, offset + length), buffer); return 0; } catch { return 4; } },  
+ 796713: () => { return (typeof wasmOffsetConverter !== 'undefined'); }
 };
 function GetWindowInnerWidth() { return window.innerWidth; }
 function GetWindowInnerHeight() { return window.innerHeight; }
@@ -11035,8 +11035,8 @@ var _asyncify_start_unwind = createExportWrapper('asyncify_start_unwind', 1);
 var _asyncify_stop_unwind = createExportWrapper('asyncify_stop_unwind', 0);
 var _asyncify_start_rewind = createExportWrapper('asyncify_start_rewind', 1);
 var _asyncify_stop_rewind = createExportWrapper('asyncify_stop_rewind', 0);
-var ___start_em_js = Module['___start_em_js'] = 796786;
-var ___stop_em_js = Module['___stop_em_js'] = 796859;
+var ___start_em_js = Module['___start_em_js'] = 796770;
+var ___stop_em_js = Module['___stop_em_js'] = 796843;
 
 // include: postamble.js
 // === Auto-generated postamble setup entry stuff ===
