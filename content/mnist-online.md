@@ -12,7 +12,6 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
 
 ***Note that on slower network connections it may not load immediately!***
 
-
 <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
 <script type='text/javascript'>
   var Module = {
