@@ -30,7 +30,7 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           mkdir -p output
-          ln -s projects.html index.html
           rsync -av --include='*/' --include='*.html' --include='*.js' --include='*.wasm' --exclude='*' content/ output/
           echo "nielskoe.com" > output/CNAME
+          ln -s output/projects.html output/index.html
           ghp-import -n -p -f output
