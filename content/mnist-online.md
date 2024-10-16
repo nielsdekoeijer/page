@@ -92,4 +92,7 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
   }
 </style>
 
-This demo is entirely created in C++!
+This demo is entirely created in C++ and served statically from github. The technolgies used here are essentially raylib (for drawing stuff) and ONNXRuntime (for running neural networks). These two technolgies are quite nice for this task as the authors have kindly provided easy ways to cross compile them.
+
+In my view it nicely showcases what's possible with WASM! We live in exciting times. 
+
