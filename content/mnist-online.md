@@ -10,6 +10,9 @@ On the canvas below, you can draw a number.
 A neural net will then run in your browser to determine which number it is (0 through 9).
 The red bars will indicate the likelyhood of each number as you draw on the canvas.
 
+This demo is entirely created in C++ and served statically from github. The technolgies used here are essentially raylib (for drawing stuff) and ONNXRuntime (for running neural networks). These two technolgies are quite nice for this task as the authors have kindly provided easy ways to cross compile them.
+In my view it nicely showcases what's possible with WASM! We live in exciting times. 
+
 ***Note that on slower network connections it may not load immediately!***
 
 <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
@@ -91,8 +94,4 @@ The red bars will indicate the likelyhood of each number as you draw on the canv
     margin-left: 20;
   }
 </style>
-
-This demo is entirely created in C++ and served statically from github. The technolgies used here are essentially raylib (for drawing stuff) and ONNXRuntime (for running neural networks). These two technolgies are quite nice for this task as the authors have kindly provided easy ways to cross compile them.
-
-In my view it nicely showcases what's possible with WASM! We live in exciting times. 
 
