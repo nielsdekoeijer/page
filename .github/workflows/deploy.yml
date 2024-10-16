@@ -13,38 +13,13 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v3
 
-      # Cache for Python dependencies
-      - name: Cache Python packages
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-
-      # Cache for apt packages, including Pandoc
-      - name: Cache apt packages
-        uses: actions/cache@v3
-        with:
-          path: /var/cache/apt
-          key: ${{ runner.os }}-apt-${{ hashFiles('**/package-list.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-apt-
-
       - name: Install Pandoc
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc
+        run: sudo apt-get install -y pandoc
 
       - name: Install ghp-import
         run: pip install ghp-import
@@ -57,5 +32,5 @@ jobs:
           mkdir -p output
           rsync -av --include='*/' --include='*.html' --include='*.js' --include='*.wasm' --exclude='*' content/ output/
           echo "nielskoe.com" > output/CNAME
-          ln -s output/projects.html output/index.html
+          cp output/projects.html output/index.html
           ghp-import -n -p -f output
