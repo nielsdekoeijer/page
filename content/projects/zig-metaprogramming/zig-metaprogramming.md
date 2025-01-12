@@ -4,7 +4,8 @@ author: "Niels"
 date: "2025-12-01"
 ---
 # Zig Reflection Patterns
-Recently, I was in a situation where I needed to write a 
+Recently, I was in a situation where I needed to implement a proprietary binary protocol.
+The protocol had many 
 
 ```rust
 
