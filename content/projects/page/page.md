@@ -15,7 +15,12 @@ You can inspect the repository of this website [here](https://github.com/nielsde
 
 ## Structure
 The website project structure is given as follows:
+```python
+def hello():
+    print("Hello, world!")
 ```
+```bash
+Contents:
 ├── Makefile
 ├── content
 │   ├── about.md
@@ -37,7 +42,7 @@ Then, when we push these changes,
 github-actions runs the [Makefile](https://github.com/nielsdekoeijer/page/blob/main/Makefile).
 This Makefile uses pandoc to convert the markdown files to HTML. 
 I do this such that the directory structure of the content folder is preserved. 
-THis simplifies the reasoning required when linking between pages in the website.
+This simplifies the reasoning required when linking between pages in the website.
 
 In order to "style" the website, 
 we use the pandoc HTML templating feature to define the CSS, header, and footer of the website.

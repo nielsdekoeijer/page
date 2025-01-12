@@ -1,3 +1,4 @@
 content/*.html
-content/**/*.html
-content/**/**/*.html
+content/projects/*.html
+content/projects/page/*.html
+content/projects/mnist-web/*.html
