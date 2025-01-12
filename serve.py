@@ -3,7 +3,7 @@ import http.server
 import socketserver
 
 # Define the port on which you want to serve your files
-PORT = 8001
+PORT = 8006
 
 # Define the directory to serve files from
 directory_to_serve = "content"
