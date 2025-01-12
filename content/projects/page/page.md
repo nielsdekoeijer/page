@@ -15,6 +15,7 @@ Key for me is simplicity, as such this website is:
 
 You can inspect the repository of this website [here](https://github.com/nielsdekoeijer/page).
 
+## How 
 The website project structure is given as follows:
 ```text
 ├── Makefile
