@@ -17,8 +17,7 @@ Handler = http.server.SimpleHTTPRequestHandler
 # Create the socket server
 httpd = socketserver.TCPServer(("", PORT), Handler)
 
-print(f"Serving at port {PORT}")
-
+print(f"Serving at port http://127.0.0.1:{PORT}")
 try:
     # Serve the files indefinitely
     httpd.serve_forever()
