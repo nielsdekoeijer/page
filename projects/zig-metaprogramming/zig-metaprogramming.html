@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zig Reflection Patterns</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+	    line-height: 1.2;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar .container {
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+	    min-height: 100vh;
+        }
+	p {
+	  margin-bottom: 0.25em;
+	}
+
+	ul li {
+	  margin-bottom: 0.25em;
+	}
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="/projects.html">Projects</a>
+            <a href="/work.html">Work</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1 id="zig-reflection-patterns">Zig Reflection Patterns</h1>
+        <p>Recently, I needed to implement a proprietary binary protocol
+        for a project I was working on. The protocol was used to control
+        an audio graph running on a microcontroller: binary commands are
+        over TCP, affecting change on the processing. While the protocol
+        was very simple and somewhat well documented, there was a very
+        large quantity of commands that needed to be implemented.</p>
+        <p>As such, in my mind, the quickest way forward was to
+        implement each command as a struct. I could then use compile
+        time reflection to write (de)serializers for the binary
+        protocol.</p>
+        <p>Simply enough, an initial implementation was made in C++
+        using <code>boost::hana</code>, which is a lovely
+        metaprogramming library. However, when scaling to 500+ commands
+        the compile times and the compiler RAM usage quickly became
+        infeasible. While it was likely possible to work around this
+        with better use of <code>boost::hana</code>, I went looking for
+        alternatives instead.</p>
+        <p>I had already been playing with Zig in my time off, and was
+        already familiar with <code>comptime</code> and it’s
+        benefits.</p>
+        <!--```rust-->
+        <!---->
+        <!--pub fn test() void {-->
+        <!--    std.print("asdf", .{});-->
+        <!--}-->
+        <!--```-->
+    </div>
+</body>
+</html>
