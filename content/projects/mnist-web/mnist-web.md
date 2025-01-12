@@ -65,32 +65,32 @@ This demo is entirely created in C++ and served statically from github. The tech
 
   function adjustCanvasScale() {
     var canvas = document.getElementById('canvas');
-    var containerWidth = document.documentElement.clientWidth;
-    var containerHeight =document.documentElement.clientHeight;
-    
-    // Calculate the scale based on desired maximum size
+    var container = document.querySelector('.main-content');
+    var containerWidth = container.clientWidth;
+    var containerHeight = container.clientHeight;
+
     var maxCanvasWidth = 760;
     var maxCanvasHeight = 560;
-    
     var scaleWidth = containerWidth / maxCanvasWidth;
     var scaleHeight = containerHeight / maxCanvasHeight;
-    
-    // Use the smaller scale to ensure the canvas fits within the viewport
     var scale = Math.min(scaleWidth, scaleHeight);
-    
+
     canvas.style.transform = `scale(${scale * 0.9})`;
     canvas.style.transformOrigin = 'top left';
   }
-  
-  // Adjust the canvas scale on load and on window resize
+
   window.addEventListener('load', adjustCanvasScale);
   window.addEventListener('resize', adjustCanvasScale);
 </script>
 <script async type="text/javascript" src="mnist-web.js"></script>
 
 <style>
-  #canvas {
-    margin-left: 20;
-  }
+#canvas {
+  <!--display: block;-->
+  <!--max-width: 100%;-->
+  <!--height: auto;-->
+  <!--margin: auto auto;-->
+margin-left: 20;
+}
 </style>
 
