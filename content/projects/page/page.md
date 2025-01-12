@@ -8,19 +8,16 @@ date: "2024-06-11"
 
 Here I will detail how this website is hosted.
 Key for me is simplicity, as such this website is:
+
 * Completely static.
 * Written entirely in markdown.
 * Hosted on github, automatically deploying using actions.
+
 You can inspect the repository of this website [here](https://github.com/nielsdekoeijer/page).
 
 ## Structure
 The website project structure is given as follows:
-```python
-def hello():
-    print("Hello, world!")
-```
-```bash
-Contents:
+```text
 ├── Makefile
 ├── content
 │   ├── about.md
