@@ -1,5 +1,5 @@
 # Countries I've Visited
-I have had the priveledge of visiting the following countries during my life:
+I have had the privilege of visiting the following countries during my life:
 
 ## 🌍 Africa (54 countries)
 - [ ] Algeria  
@@ -111,28 +111,23 @@ I have had the priveledge of visiting the following countries during my life:
 ## 🌍 Europe (44 countries)
 - [ ] Albania  
 - [ ] Andorra  
-- [ ] Armenia  
 - [x] Austria  
-- [ ] Azerbaijan  
 - [ ] Belarus  
 - [x] Belgium  
 - [ ] Bosnia and Herzegovina  
 - [ ] Bulgaria  
 - [ ] Croatia  
-- [ ] Cyprus  
 - [x] Czech Republic  
 - [x] Denmark  
 - [ ] Estonia  
 - [ ] Finland  
-- [x] France    
+- [x] France  
 - [x] Germany  
 - [x] Greece  
 - [x] Hungary  
 - [ ] Iceland  
 - [ ] Ireland  
 - [x] Italy  
-- [ ] Kazakhstan  
-- [ ] Kosovo  
 - [ ] Latvia  
 - [ ] Liechtenstein  
 - [ ] Lithuania  
@@ -182,7 +177,7 @@ I have had the priveledge of visiting the following countries during my life:
 - [ ] Saint Lucia  
 - [ ] Saint Vincent and the Grenadines  
 - [ ] Trinidad and Tobago  
-- [d] United States  
+- [ ] United States  
 
 ## 🌎 South America (12 countries)
 - [ ] Argentina  
@@ -198,7 +193,7 @@ I have had the priveledge of visiting the following countries during my life:
 - [ ] Uruguay  
 - [ ] Venezuela  
 
-## 🌏 Oceania (16 countries)
+## 🌏 Oceania (14 countries)
 - [ ] Australia  
 - [ ] Fiji  
 - [ ] Kiribati  
