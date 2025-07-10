@@ -107,7 +107,7 @@ I have had the privilege of visiting the following countries during my life:
 - [ ] Tajikistan  
 - [x] Thailand  
 - [ ] Timor-Leste  
-- [ ] Turkey  
+- [x] Turkey  
 - [ ] Turkmenistan  
 - [ ] United Arab Emirates  
 - [ ] Uzbekistan  
@@ -183,7 +183,7 @@ I have had the privilege of visiting the following countries during my life:
 - [ ] Saint Lucia  
 - [ ] Saint Vincent and the Grenadines  
 - [ ] Trinidad and Tobago  
-- [ ] United States  
+- [x] United States  
 
 ## 🌎 South America (12 countries)
 - [ ] Argentina  
