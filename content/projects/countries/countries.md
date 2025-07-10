@@ -68,13 +68,13 @@ I have had the priveledge of visiting the following countries during my life:
 - [ ] Cambodia  
 - [ ] China  
 - [ ] Cyprus  
-- [ ] Georgia  
+- [x] Georgia  
 - [ ] India  
-- [ ] Indonesia  
+- [x] Indonesia  
 - [ ] Iran  
 - [ ] Iraq  
 - [ ] Israel  
-- [ ] Japan  
+- [x] Japan  
 - [ ] Jordan  
 - [ ] Kazakhstan  
 - [ ] Kuwait  
@@ -87,19 +87,19 @@ I have had the priveledge of visiting the following countries during my life:
 - [ ] Myanmar  
 - [ ] Nepal  
 - [ ] North Korea  
-- [ ] Oman  
+- [x] Oman  
 - [ ] Pakistan  
 - [ ] Palestine  
 - [ ] Philippines  
-- [ ] Qatar  
+- [x] Qatar  
 - [ ] Saudi Arabia  
-- [ ] Singapore  
+- [x] Singapore  
 - [ ] South Korea  
 - [ ] Sri Lanka  
 - [ ] Syria  
 - [ ] Taiwan  
 - [ ] Tajikistan  
-- [ ] Thailand  
+- [x] Thailand  
 - [ ] Timor-Leste  
 - [ ] Turkey  
 - [ ] Turkmenistan  
@@ -112,49 +112,48 @@ I have had the priveledge of visiting the following countries during my life:
 - [ ] Albania  
 - [ ] Andorra  
 - [ ] Armenia  
-- [ ] Austria  
+- [x] Austria  
 - [ ] Azerbaijan  
 - [ ] Belarus  
-- [ ] Belgium  
+- [x] Belgium  
 - [ ] Bosnia and Herzegovina  
 - [ ] Bulgaria  
 - [ ] Croatia  
 - [ ] Cyprus  
-- [ ] Czech Republic  
-- [ ] Denmark  
+- [x] Czech Republic  
+- [x] Denmark  
 - [ ] Estonia  
 - [ ] Finland  
-- [ ] France  
-- [ ] Georgia  
-- [ ] Germany  
-- [ ] Greece  
-- [ ] Hungary  
+- [x] France    
+- [x] Germany  
+- [x] Greece  
+- [x] Hungary  
 - [ ] Iceland  
 - [ ] Ireland  
-- [ ] Italy  
+- [x] Italy  
 - [ ] Kazakhstan  
 - [ ] Kosovo  
 - [ ] Latvia  
 - [ ] Liechtenstein  
 - [ ] Lithuania  
-- [ ] Luxembourg  
+- [x] Luxembourg  
 - [ ] Malta  
 - [ ] Moldova  
 - [ ] Monaco  
 - [ ] Montenegro  
-- [ ] Netherlands  
+- [x] Netherlands  
 - [ ] North Macedonia  
 - [ ] Norway  
-- [ ] Poland  
-- [ ] Portugal  
+- [x] Poland  
+- [x] Portugal  
 - [ ] Romania  
 - [ ] Russia  
 - [ ] San Marino  
 - [ ] Serbia  
 - [ ] Slovakia  
 - [ ] Slovenia  
-- [ ] Spain  
-- [ ] Sweden  
+- [x] Spain  
+- [x] Sweden  
 - [ ] Switzerland  
 - [ ] Ukraine  
 - [ ] United Kingdom  
