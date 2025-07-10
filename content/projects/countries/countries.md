@@ -1,3 +1,9 @@
+---
+title: "Projects"
+author: "Niels"
+date: "2024-06-11"
+---
+
 # Countries I've Visited
 I have had the privilege of visiting the following countries during my life:
 
