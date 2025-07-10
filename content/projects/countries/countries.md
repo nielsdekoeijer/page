@@ -151,12 +151,12 @@ I have had the priveledge of visiting the following countries during my life:
 - [ ] San Marino  
 - [ ] Serbia  
 - [ ] Slovakia  
-- [ ] Slovenia  
+- [x] Slovenia  
 - [x] Spain  
 - [x] Sweden  
-- [ ] Switzerland  
+- [x] Switzerland  
 - [ ] Ukraine  
-- [ ] United Kingdom  
+- [x] United Kingdom  
 - [ ] Vatican City  
 
 ## 🌎 North America (23 countries)
@@ -182,7 +182,7 @@ I have had the priveledge of visiting the following countries during my life:
 - [ ] Saint Lucia  
 - [ ] Saint Vincent and the Grenadines  
 - [ ] Trinidad and Tobago  
-- [ ] United States  
+- [d] United States  
 
 ## 🌎 South America (12 countries)
 - [ ] Argentina  
