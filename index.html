@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+	    line-height: 1.2;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar .container {
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+	    min-height: 100vh;
+        }
+	p {
+	  margin-bottom: 0.25em;
+	}
+
+	ul li {
+	  margin-bottom: 0.25em;
+	}
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="/projects.html">Projects</a>
+            <a href="/work.html">Work</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1 id="projects">Projects</h1>
+        <ul>
+        <li><p><strong><a
+        href="projects/countries/countries.html">Countries
+        Visited</a></strong>:</p>
+        <p>A list of all countries I’ve been to in my life so
+        far!</p></li>
+        <li><p><strong><a href="projects/page/page.html">This
+        Website</a>:</strong></p>
+        <p>On the creation of a this simple website, using pandoc,
+        markdown and github actions.</p></li>
+        <li><p><strong><a href="projects/mnist-web/mnist-web.html">MNIST
+        Online</a>:</strong></p>
+        <p>On the creation of a MNIST inference widget in using Raylib
+        and Microsoft’s ONNX runtime in WebAssembly.</p></li>
+        </ul>
+    </div>
+</body>
+</html>
