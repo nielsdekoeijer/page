@@ -5,9 +5,9 @@ date: "2024-06-11"
 ---
 
 # Projects
-* **[Zig Reflection](projects/zig-metaprogramming/zig-metaprogramming.html)**:
+* **[Countries Visited](projects/countries/countries.html)**:
 
-    A list of some nice zig reflection patterns I encountered while coding.
+    A list of all countries I've been to!
 * **[This Website](projects/page/page.html):** 
 
     On the creation of a this simple website, using pandoc, markdown and github actions.
