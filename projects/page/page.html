@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+	    line-height: 1.2;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar .container {
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+	    min-height: 100vh;
+        }
+	p {
+	  margin-bottom: 0.25em;
+	}
+
+	ul li {
+	  margin-bottom: 0.25em;
+	}
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="/projects.html">Projects</a>
+            <a href="/work.html">Work</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1
+        id="page-on-the-creation-of-a-simple-website-generator">Page: on
+        the creation of a simple website generator</h1>
+        <p>Here I will detail how this website is hosted. Key for me is
+        simplicity, as such this website is:</p>
+        <ul>
+        <li>Completely static.</li>
+        <li>Written entirely in markdown.</li>
+        <li>Hosted on github, automatically deploying using
+        actions.</li>
+        </ul>
+        <p>You can inspect the repository of this website <a
+        href="https://github.com/nielsdekoeijer/page">here</a>.</p>
+        <h2 id="how-does-it-work">How does it work?</h2>
+        <ul>
+        <li><p>The website project structure is given as follows:</p>
+        <pre class="text"><code>├── Makefile
+├── content
+│   ├── about.md
+│   ├── contact.md
+│   ├── projects
+│   │   ├── mnist-web
+│   │   └── page
+│   ├── projects.md
+│   └── work.md
+├── pandoc
+│   ├── defaults.yml
+│   ├── footer.html
+│   ├── header.html
+│   └── template.html
+└── serve.py</code></pre></li>
+        <li><p>To deploy changes, we simply change the contents of the
+        <code>content</code> directory.</p></li>
+        <li><p>Then, when we push these changes, github-actions runs the
+        <a
+        href="https://github.com/nielsdekoeijer/page/blob/main/Makefile">Makefile</a>.
+        This Makefile uses pandoc to convert the markdown files to HTML.
+        I do this such that the directory structure of the content
+        folder is preserved. This simplifies the reasoning required when
+        linking between pages in the website.</p></li>
+        <li><p>In order to “style” the website, we use the pandoc HTML
+        templating feature to define the CSS, header, and footer of the
+        website.</p></li>
+        </ul>
+    </div>
+</body>
+</html>
