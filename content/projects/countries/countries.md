@@ -122,7 +122,7 @@ I have had the privilege of visiting the following countries during my life:
 - [x] Belgium  
 - [ ] Bosnia and Herzegovina  
 - [ ] Bulgaria  
-- [ ] Croatia  
+- [x] Croatia  
 - [x] Czech Republic  
 - [x] Denmark  
 - [ ] Estonia  
@@ -140,7 +140,7 @@ I have had the privilege of visiting the following countries during my life:
 - [x] Luxembourg  
 - [ ] Malta  
 - [ ] Moldova  
-- [ ] Monaco  
+- [x] Monaco  
 - [ ] Montenegro  
 - [x] Netherlands  
 - [ ] North Macedonia  
