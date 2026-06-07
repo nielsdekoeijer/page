@@ -6,6 +6,8 @@ date: "2024-06-11"
 
 # Niels de Koeijer
 Welcome to my site! 
+I have decided to keep the site very basic and homebrew, as I am a little nostalgic about these types of websites 
+from back in the day.
 Here I intend to share some of the things I have worked on over the years, which can be found below. 
 
 ## Projects & Blog

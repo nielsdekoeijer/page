@@ -9,6 +9,10 @@ date: "2026-06-07"
 
     Senior Software Engineer at Bang & Olufsen working on Real-Time Audio
 
+    * **Paper Contribution:** 
+        
+        * [Fast-ULCNet: A fast and ultra low complexity network for single-channel speech enhancement](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8Bzb5L8AAAAJ&citation_for_view=8Bzb5L8AAAAJ:W7OEmFMy1HYC)
+
 * **2021-2025**: 
 
     Research Engineer at Bang & Olufsen research, with a focus on deployment of audio algorithms and machine learning on embedded platforms.
