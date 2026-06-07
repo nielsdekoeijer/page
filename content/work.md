@@ -1,10 +1,14 @@
 ---
-title: "Work"
+title: "CV"
 author: "Niels"
-date: "2024-06-11"
+date: "2026-06-07"
 ---
 
 # Work
+* **2026-current**: 
+
+    Senior Software Engineer at Bang & Olufsen working on Real-Time Audio
+
 * **2021-2025**: 
 
     Research Engineer at Bang & Olufsen research, with a focus on deployment of audio algorithms and machine learning on embedded platforms.

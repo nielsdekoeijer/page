@@ -144,7 +144,7 @@ I have had the privilege of visiting the following countries during my life:
 - [ ] Montenegro  
 - [x] Netherlands  
 - [ ] North Macedonia  
-- [ ] Norway  
+- [x] Norway  
 - [x] Poland  
 - [x] Portugal  
 - [ ] Romania  
